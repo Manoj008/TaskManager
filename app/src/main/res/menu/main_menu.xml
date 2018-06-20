@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/eventMenu"
+        android:icon="@drawable/ic_check_box_black_24dp"
+        app:showAsAction="ifRoom"
+        android:title="Tasks" />
+
+    <item android:id="@+id/birthdayMenu"
+         android:icon="@drawable/ic_cake_black_24dp"
+         app:showAsAction="ifRoom"
+        android:title="Bithdays" />
+    <item android:id="@+id/notesMenu"
+    android:icon="@drawable/ic_event_note_black_24dp"
+    app:showAsAction="ifRoom"
+    android:title="Notes" />
+
+</menu>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    tools:context="com.manoj.taskmanagertodoapp.MainActivity">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:layout_above="@+id/center"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/todo" />
+
+    <TextView
+        android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="252dp"
+        android:gravity="center"
+        android:layout_margin="25dp"
+        android:text="Never Miss Any Important Task With"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/center"
+        android:text="TASK MANAGER"
+        android:id="@+id/textView" />
+
+
+</RelativeLayout>

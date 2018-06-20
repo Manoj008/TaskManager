@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="#fff"
+    android:orientation="horizontal"
+    android:weightSum="20">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5">
+
+        <ImageView
+            android:id="@+id/cust_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.5"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/todo" />
+
+        <TextView
+            android:id="@+id/cust_count"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@+id/cust_icon"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/cir"
+            android:gravity="center|top"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="3dp"
+            android:text="0"
+            android:visibility="gone"
+            android:textColor="#000"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="17"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/cust_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/cust_small"
+            android:text="TO DO MANAGER"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:theme="@style/Theme.AppCompat.Light" />
+
+        <TextView
+            android:id="@+id/cust_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/cust_small"
+            android:text="TO DO MANAGER"
+            android:textColor="#000"
+            android:textSize="13dp"
+            android:theme="@style/Theme.AppCompat.Light" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cust_add"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/cust_title"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/cust_small"
+        android:layout_weight="1.5"
+        android:background="@drawable/ic_add_box_black_24dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="#000"
+        android:textSize="10dp"
+        android:theme="@style/Theme.AppCompat.Light" />
+
+    <Button
+        android:id="@+id/cust_setting"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/cust_title"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@+id/cust_small"
+        android:layout_weight="0.5"
+        android:background="@drawable/ic_settings_black_24dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="#000"
+        android:textSize="10dp"
+        android:theme="@style/Theme.AppCompat.Light" />
+</LinearLayout>
